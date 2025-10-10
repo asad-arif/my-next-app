@@ -3,7 +3,17 @@ export default function ConfiguratorsLayout({ children }) {
     <div className="min-h-screen bg-gray-900">
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto">
-          <h1 className="text-2xl font-bold text-white">3D Configurators</h1>
+          <div className="flex items-center space-x-3">
+            <img
+              src="/images/asad_pic.png"
+              alt="Muhammad Asad avatar"
+              className="w-10 h-10 rounded-full object-cover border border-white/20"
+            />
+            <div className="flex flex-col">
+              <h1 className="text-2xl font-bold text-white">Muhammad Asad</h1>
+              <span className="text-xs text-gray-300/80">3D Developer — Configurators</span>
+            </div>
+          </div>
           <div className="mt-2 space-x-4">
             <a 
               href="/configurators/chair" 

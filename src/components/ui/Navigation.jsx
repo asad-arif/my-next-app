@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Code, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { scrollToSection } from '@/lib/scroll';
 import { useScrollDetection } from '@/lib/scroll';
 
@@ -28,11 +28,16 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
+          <div className="flex items-center space-x-3">
+            <img
+              src="/images/asad_pic.png"
+              alt="Muhammad Asad avatar"
+              className="w-10 h-10 rounded-full object-cover border border-white/20"
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-xl font-bold text-white">Muhammad Asad</span>
+              <span className="text-xs text-gray-300/80">3D Developer</span>
             </div>
-            <span className="text-xl font-bold text-white">3D Portfolio</span>
           </div>
           
           {/* Desktop Navigation */}
